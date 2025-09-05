@@ -1,0 +1,64 @@
+# RoanPaul Photography & Arts - Configuration
+# Environment settings for deployment and development
+
+site:
+  name: "RoanPaul Photography & Arts"
+  tagline: "Capturing Life's Beautiful Moments"
+  description: "Professional photography portfolio showcasing artistic vision and technical excellence"
+  url: "https://roanpaul-photography.vercel.app"
+  author: "RoanPaul"
+  email: "contact@roanpaul.com"
+
+branding:
+  logo_path: "/images/logo.svg"
+  favicon_path: "/favicon.ico"
+  primary_color: "#2c2c2c"
+  secondary_color: "#f4f4f4"
+  accent_color: "#d4af37"
+
+features:
+  gallery:
+    images_per_page: 12
+    enable_infinite_scroll: true
+    enable_lightbox: true
+    show_metadata_by_default: false
+  
+  admin:
+    enable_magic_link_auth: true
+    session_duration_hours: 24
+    max_upload_size_mb: 10
+  
+  contact:
+    enable_recaptcha: true
+    enable_honeypot: true
+    admin_notification_email: true
+
+integrations:
+  mongodb:
+    database_name: "roanpaul_photography"
+  
+  cloudinary:
+    folder: "roanpaul-portfolio"
+    watermark_text: "© RoanPaul Photography"
+    watermark_opacity: 30
+  
+  sendgrid:
+    template_id: null
+    from_name: "RoanPaul Photography"
+  
+  analytics:
+    google_analytics_enabled: false
+    track_page_views: true
+    track_gallery_interactions: true
+
+seo:
+  enable_sitemap: true
+  enable_robots_txt: true
+  enable_structured_data: true
+  default_image: "/images/og-default.jpg"
+
+performance:
+  enable_image_optimization: true
+  enable_lazy_loading: true
+  cache_duration_seconds: 3600
+
