@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://roanpaul-photography.vercel.app/sitemap.xml
+

@@ -1,22 +1,50 @@
 {
-  "name": "react",
+  "name": "roanpaul-photography",
   "version": "1.0.0",
-  "description": "React example starter project",
-  "keywords": ["react", "starter"],
-  "main": "src/index.js",
+  "description": "RoanPaul Photography & Arts - Professional Photography Portfolio",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-scripts": "4.0.0"
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "mongodb": "^6.0.0",
+    "mongoose": "^8.0.0",
+    "cloudinary": "^1.41.0",
+    "multer": "^1.4.5-lts.1",
+    "multer-storage-cloudinary": "^4.0.0",
+    "@sendgrid/mail": "^8.1.0",
+    "nodemailer": "^6.9.0",
+    "jsonwebtoken": "^9.0.0",
+    "bcryptjs": "^2.4.3",
+    "crypto": "^1.0.1",
+    "react-google-recaptcha": "^3.1.0",
+    "framer-motion": "^10.16.0",
+    "react-intersection-observer": "^9.5.0",
+    "sharp": "^0.32.0"
   },
   "devDependencies": {
-    "typescript": "4.1.3"
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^14.0.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.0.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  "keywords": [
+    "photography",
+    "portfolio",
+    "nextjs",
+    "mongodb",
+    "cloudinary",
+    "art"
+  ],
+  "author": "RoanPaul Photography & Arts",
+  "license": "MIT"
 }
+
